@@ -1309,15 +1309,25 @@ footer {
         gap: 0.6rem;
     }
     .hero-title {
-        font-size: 2.8rem;
+        font-size: clamp(2.4rem, 10vw, 3rem);
         line-height: 1.1;
-        margin-bottom: 1.25rem;
+        margin-bottom: 1rem;
     }
     .hero-desc {
-        font-size: 1rem;
+        font-size: 0.95rem;
         color: rgba(255, 255, 255, 0.7);
-        margin-bottom: 2.5rem;
+        margin-bottom: 2rem;
         max-width: 100%;
+    }
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.8rem;
+    }
+    .btn-primary, .btn-outline {
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem 1.5rem;
     }
     .features {
         padding: 3rem 1.5rem;
@@ -1336,8 +1346,19 @@ footer {
     }
     .process-wrap {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
     }
+    .process-step {
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 8px;
+    }
+    .process-num {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-bottom: 1rem;
+    }
+
     .process-line {
         display: none;
     }
